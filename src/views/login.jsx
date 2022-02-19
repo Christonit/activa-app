@@ -1,0 +1,52 @@
+import { React } from "react";
+import '../sass/main.scss';
+export const Login = () => {
+    return <section className="action-container">
+        <div className="action-header"></div>
+
+        <div className="mb-28">
+            <img src="https://tedwaffl.sirv.com/Activa/activaLogo.svg" alt="Branding" className="small-logo" />
+        </div>
+        
+        <h1 className="title">Iniciar sesión</h1>
+
+        <div class="mb-20">
+            <div className="form-label">
+                <label for="field" >Correo electrónico:</label>
+                
+                </div>
+            <input type="email" className="form-control" name="field"/>
+        </div>
+        <div class="mb-20">
+            <div className="form-label">
+                
+                <label for="field" className="">Contraseña:</label>
+                <span class="material-icons form-check-icon ml-4">
+                    check_circle
+                </span>
+                <a href="#" className="link ms-auto">¿Olvidaste tu contraseña?</a>
+            </div>
+            <div className="input-with-icon">
+                <input type="email" className="form-control" name="field" />
+                <button className="password-icon input-icon">
+                    <img src="https://tedwaffl.sirv.com/Activa/see.svg" alt="" />
+                </button>
+
+            </div>
+            <div className="informational-label">
+                <img src="https://tedwaffl.sirv.com/Activa/information-i.svg" className="mr-6" alt="" />
+                Correo electrónico registrado en tu contrato
+            </div>
+        </div>
+
+        <button className="btn cta mb-20">Iniciar sesión</button>
+
+        <div>
+            <a href="#" className="link">Eres nuevo en Activa? <br className="d-block" />
+            Regístrate.</a>
+        </div>
+
+        
+
+    </section>
+}

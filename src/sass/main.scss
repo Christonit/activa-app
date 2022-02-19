@@ -1,0 +1,167 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
+@import "variables";
+@import "mixins";
+
+.sb-show-main.sb-main-padded {
+    padding: 0;
+}
+*,
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.action-container {
+    height: 100vh;
+    background-color: white;
+}
+
+.onboarding-container {
+    padding: 24px 0;
+    height: 100vh;
+    background-color: white;
+}
+.onboarding-slider {
+    padding: 24px 0;
+}
+
+.onboarding-img {
+    margin-top: 44px;
+    width: 100%;
+}
+
+.slider-subtitle {
+    color: $blue;
+    @include bold;
+    font-size: 10px;
+}
+.slider-title {
+    color: $black;
+    @include bold;
+    font-size: 24pt;
+    margin-bottom: 0;
+}
+
+.onboarding-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: white;
+    padding: 25px 16px;
+}
+.slider-text {
+    padding: 0 16px;
+}
+
+.slider-bullets {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+}
+
+.slider-bullet {
+    height: 8px;
+    width: 8px;
+    border: unset;
+    border-radius: 12px;
+    background-color: $gray-2;
+    margin: 0 6px;
+}
+.slider-bullet.active {
+    background-color: $blue;
+}
+
+.btn.cta {
+    font-size: 11px;
+    color: white;
+    @include bold;
+    width: 100%;
+    background-image: linear-gradient(to right, $ligh-orange, $orange);
+    box-shadow: 0 4px 4px rgba(218, 54, 44, 0.3);
+    border: unset;
+    height: 32px;
+    @include radius-8;
+}
+
+.text {
+    color: $black;
+}
+
+.link {
+    color: $blue;
+    text-decoration: none;
+    line-height: 1.1;
+}
+
+.size-11 {
+    font-size: 11px;
+}
+
+.title {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 32px;
+    font-size: 20px;
+    @include bold;
+}
+
+.form-label {
+    color: $black;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+.form-check-icon {
+    color: $success;
+    font-size: 12px;
+}
+.form-control {
+    font-size: 12px;
+    border: 1px solid $light-blue;
+    height: 28px;
+    padding: 0 12px;
+    @include regular;
+    @include radius-8;
+    &:focus {
+        outline: 1px solid $light-blue;
+        border-color: $light-blue;
+    }
+}
+
+.informational-label {
+    display: flex;
+    align-items: center;
+    color: $gray;
+    font-size: 10px;
+    line-height: normal;
+    margin-top: 8px;
+    img {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.input-with-icon {
+    position: relative;
+}
+.input-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 4px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    img {
+        width: 14px;
+    }
+}
+@import "margins";

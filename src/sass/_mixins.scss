@@ -1,0 +1,14 @@
+@mixin regular {
+    font-weight: 400;
+}
+@mixin bold {
+    font-weight: 700;
+}
+
+@mixin radius-8 {
+    border-radius: 8px;
+}
+
+@mixin radius-12 {
+    border-radius: 12px;
+}
