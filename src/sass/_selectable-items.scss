@@ -1,0 +1,23 @@
+.selectable-items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(88px, auto));
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    justify-content: start;
+}
+.selectable-item {
+    font-size: 16px;
+    border: 1px solid $light-blue;
+    background-color: white;
+    height: 28px;
+    padding: 0 16px;
+    height: 40px;
+    min-width: 88px;
+    @include bold;
+    @include radius-12;
+    &.active {
+        border-color: $blue;
+        background-color: $lighter-blue;
+        border-bottom: 2px solid $blue;
+    }
+}

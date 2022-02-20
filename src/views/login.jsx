@@ -2,22 +2,30 @@ import { React } from "react";
 import '../sass/main.scss';
 export const Login = () => {
     return <section className="action-container">
-        <div className="action-header"></div>
+        <div className="action-header">
+            <button className="app-bar-button">
+                <img src="https://tedwaffl.sirv.com/Activa/arrow_back_ios_new_black_24dp(1).svg" alt="" />
+            </button>
+        </div>
 
+
+        <div className="action-body">
+
+       
         <div className="mb-28">
             <img src="https://tedwaffl.sirv.com/Activa/activaLogo.svg" alt="Branding" className="small-logo" />
         </div>
         
         <h1 className="title">Iniciar sesión</h1>
 
-        <div class="mb-20">
+        <div class="mb-24">
             <div className="form-label">
                 <label for="field" >Correo electrónico:</label>
                 
                 </div>
             <input type="email" className="form-control" name="field"/>
         </div>
-        <div class="mb-20">
+        <div className="mb-24">
             <div className="form-label">
                 
                 <label for="field" className="">Contraseña:</label>
@@ -37,7 +45,16 @@ export const Login = () => {
                 <img src="https://tedwaffl.sirv.com/Activa/information-i.svg" className="mr-6" alt="" />
                 Correo electrónico registrado en tu contrato
             </div>
+            
         </div>
+        <div className="form-checkbox-container mb-24">
+            <label class="form-checkbox">
+                <input type="checkbox" />
+                <span class="checkmark"></span>
+            </label>
+            Por favor, seleccione esta casilla si el contrato está a su nombre.
+        </div>
+
 
         <button className="btn cta mb-20">Iniciar sesión</button>
 
@@ -46,6 +63,7 @@ export const Login = () => {
             Regístrate.</a>
         </div>
 
+        </div>
         
 
     </section>

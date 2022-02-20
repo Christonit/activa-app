@@ -6,7 +6,7 @@ export const Onboarding = () => {
 
             <div className="onboarding-slide">
                 <div className="slider-text">
-                    <h3 className="slider-subtitle">HOLA!</h3>
+                    <h3 className="headline-label">HOLA!</h3>
                     <h2 className="slider-title">Bienvenido a Activa! Gracias por descargar nuestra aplicación!</h2>
                 </div>
 
@@ -16,7 +16,7 @@ export const Onboarding = () => {
            
         </div>
 
-        <div className="onboarding-cta">
+        <div className="action-cta">
             <div className="slider-bullets">
                 <button className="slider-bullet active"></button>
                 <button className="slider-bullet"></button>

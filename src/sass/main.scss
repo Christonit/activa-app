@@ -7,13 +7,46 @@
 .sb-show-main.sb-main-padded {
     padding: 0;
 }
+section {
+    padding: 0;
+}
 *,
 body {
     font-family: "Roboto", sans-serif;
 }
 
+body {
+    background-color: rgb(236, 246, 250);
+}
+.view-container {
+    background-color: rgb(236, 246, 250);
+    min-height: 100vh;
+}
 .action-container {
-    height: 100vh;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.nav-header {
+    padding: 0 24px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+}
+.action-body {
+    padding: 24px;
+}
+.view-body {
+    padding: 24px;
+}
+.view-body-white {
+    padding: 24px;
+    background-color: white;
+}
+
+.second-body-white {
+    min-height: calc(100vh - 246px);
+    height: auto;
     background-color: white;
 }
 
@@ -31,7 +64,7 @@ body {
     width: 100%;
 }
 
-.slider-subtitle {
+.headline-label {
     color: $blue;
     @include bold;
     font-size: 10px;
@@ -43,14 +76,14 @@ body {
     margin-bottom: 0;
 }
 
-.onboarding-cta {
+.action-cta {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     margin: 0;
     background-color: white;
-    padding: 25px 16px;
+    padding: 24px;
 }
 .slider-text {
     padding: 0 16px;
@@ -75,19 +108,20 @@ body {
 }
 
 .btn.cta {
-    font-size: 11px;
+    font-size: 16px;
     color: white;
     @include bold;
     width: 100%;
     background-image: linear-gradient(to right, $ligh-orange, $orange);
     box-shadow: 0 4px 4px rgba(218, 54, 44, 0.3);
     border: unset;
-    height: 32px;
-    @include radius-8;
+    height: 48px;
+    @include radius-12;
 }
 
 .text {
     color: $black;
+    line-height: normal;
 }
 
 .link {
@@ -104,13 +138,19 @@ body {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 32px;
-    font-size: 20px;
+    font-size: 28px;
     @include bold;
 }
 
+.hero-data-title {
+    color: $success;
+    @include bold;
+    font-size: 36px;
+    line-height: normal;
+}
 .form-label {
     color: $black;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 16px;
     margin-bottom: 12px;
     display: flex;
@@ -118,18 +158,53 @@ body {
 }
 .form-check-icon {
     color: $success;
-    font-size: 12px;
+    font-size: 16px;
 }
 .form-control {
-    font-size: 12px;
+    font-size: 16px;
     border: 1px solid $light-blue;
     height: 28px;
     padding: 0 12px;
     @include regular;
     @include radius-8;
     &:focus {
-        outline: 1px solid $light-blue;
-        border-color: $light-blue;
+        outline: 3px solid $light-blue;
+        box-shadow: unset;
+        border-color: $blue;
+    }
+}
+
+.input-compound {
+    display: flex;
+    align-items: center;
+    border: 1px solid $light-blue;
+    height: 40px;
+    @include regular;
+    @include radius-12;
+    overflow: hidden;
+    &.focus {
+        outline: 3px solid $light-blue;
+        border-color: $blue;
+    }
+
+    label {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        @include bold;
+        background-color: $lighter-blue;
+    }
+}
+.input-compound .form-control {
+    border-radius: unset;
+    background-color: white;
+    border-color: transparent;
+    &:focus {
+        background-color: white;
+        border-color: transparent;
+        outline: unset;
+        box-shadow: unset;
     }
 }
 
@@ -164,4 +239,90 @@ body {
         width: 14px;
     }
 }
+
+.form-checkbox-container {
+    display: flex;
+    align-items: flex-start;
+}
+.form-checkbox {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: $blue;
+    margin-right: 16px;
+}
+
+/* Hide the browser's default checkbox */
+.form-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: 2px solid $blue;
+    @include radius-6;
+}
+
+/* On mouse-over, add a grey background color */
+.form-checkbox:hover input ~ .checkmark {
+    background-color: $blue;
+    border: unset;
+}
+
+/* When the checkbox is checked, add a blue background */
+.form-checkbox input:checked ~ .checkmark {
+    background-color: $blue;
+    border: unset;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.form-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.app-bar-button {
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: unset;
+}
+
+@import "selectable-items";
 @import "margins";
