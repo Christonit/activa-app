@@ -16,6 +16,16 @@ export const Login = () => {
             <img src="https://tedwaffl.sirv.com/Activa/activaLogo.svg" alt="Branding" className="small-logo" />
         </div>
         
+        <div className="message-box success mb-32">
+            <span className="material-icons-outlined form-check-icon mb-12">
+                check_circle
+            </span>
+
+            <p className="text mb-0">
+            Te hemos enviado un mensaje a tu correo <b>carlos.perez@gmail.com</b> con las instrucciones para reestablecer tu contraseña. Por favor revisa la bandeja de entrada o el spam de tu correo.
+            </p>
+        </div>
+
         <h1 className="title">Iniciar sesión</h1>
 
         <div class="mb-24">

@@ -10,7 +10,7 @@ export const Inputfield = ({label = "[text]:"}) => {
             </div>
 }
 
-export const InputFieldWithCheck = ({label = "[text]:", link = "[link]"}) => {
+export const InputFieldWithCheck = ({label = "[text]:", link = "[link]", value = ""} ) => {
     return <div className="mb-24">
                 <div className="form-label">
                     <label for="field" className="">{label}</label>
@@ -19,7 +19,7 @@ export const InputFieldWithCheck = ({label = "[text]:", link = "[link]"}) => {
                     </span>
                     <a href="#" className="link ms-auto">{link}</a>
                 </div>
-                <input type="email" className="form-control" name="field"/>
+                <input type="email" className="form-control"  value={value} name="field"/>
             </div>
 }
 
@@ -65,7 +65,7 @@ export const InputFieldWithLinkAndCheck = ({label = "[text]:", link = "[link]"})
             </div>
 }
 
-export const InputFieldWithIcon = ({label = "[text]:"}) => {
+export const InputFieldWithIcon = ({label = "[text]:", value = ""}) => {
     return  <div className="mb-24">
                 <div className="form-label">
                     
@@ -73,7 +73,7 @@ export const InputFieldWithIcon = ({label = "[text]:"}) => {
                   
                 </div>
                 <div className="input-with-icon">
-                    <input type="email" className="form-control" name="field" />
+                    <input type="email" className="form-control" value={value} name="field" />
                     <button className="password-icon input-icon">
                         <img src="https://tedwaffl.sirv.com/Activa/see.svg" alt="" />
                     </button>
