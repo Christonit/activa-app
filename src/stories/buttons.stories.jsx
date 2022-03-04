@@ -11,7 +11,16 @@ import { Inputfield as InputfieldComp,
         title: "Inputs"
     }
 
-    export const Inputfield = () => <InputfieldComp/>
+    const InputfieldTemplate = (args) => <InputfieldComp {...args}/>
+
+    export const Inputfield = InputfieldTemplate.bind({});
+    Inputfield.argTypes = {
+        type: { 
+            control: {type :'select'}, 
+            options: ['normal', 'wrong value', 'correct'] 
+        },
+    }
+
     export const InputFieldWithCheck = () => <InputFieldWithCheckComp/>
     export const InputFieldWithInfo = () => <InputFieldWithInfoComp/>
     export const InputFieldWithLink = () => <InputFieldWithLinkComp/>

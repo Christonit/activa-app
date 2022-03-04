@@ -97,8 +97,7 @@ export const RecargaMetodoPago = () => {
                     <span className="text">$ 25.00</span>
                 </div>
             </div>
-            <h3 className="subtitle text-right mt-16"> Total: RD$ 00.00</h3>
-
+            <h3 className="subtitle text-right mt-16 mb-196"> Total: RD$ 00.00</h3>
 
             <div className="action-cta">
                 <button className="btn cta">Continuar</button>

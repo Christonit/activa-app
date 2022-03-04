@@ -1,10 +1,25 @@
 import { React } from "react";
 
-export const Inputfield = ({label = "[text]:"}) => {
-    return <div className="mb-24">
+// export const Inputfield = ({label = "[text]:"}) => {
+//     return <div className="mb-24">
+//                 <div className="form-label">
+//                     <label for="field" >{label}</label>
+                    
+//                     </div>
+//                 <input type="email" className="form-control" name="field"/>
+//             </div>
+// }
+
+export const Inputfield = ({label = "[text]:", type = "normal" } ) => {
+    return <div className={`mb-24 ${type == "wrong value" ? 'wrong-value-field' : "" }`}>
                 <div className="form-label">
                     <label for="field" >{label}</label>
-                    
+                    {type == "correct" && <span className="material-icons form-check-icon ml-4">
+                        check_circle
+                    </span>}
+                    {type == "wrong value" && <span className="material-icons form-check-icon ml-4">
+                        cancel
+                    </span>}
                     </div>
                 <input type="email" className="form-control" name="field"/>
             </div>

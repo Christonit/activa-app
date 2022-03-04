@@ -2,12 +2,11 @@ import { React } from "react";
 import '../sass/main.scss';
 export const Login = () => {
     return <section className="action-container">
-        <div className="action-header">
+        <div className="nav-header">
             <button className="app-bar-button">
                 <img src="https://tedwaffl.sirv.com/Activa/arrow_back_ios_new_black_24dp(1).svg" alt="" />
             </button>
         </div>
-
 
         <div className="action-body">
 
