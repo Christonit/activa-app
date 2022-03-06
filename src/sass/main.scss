@@ -819,6 +819,53 @@ a {
     padding: 20px 0;
     border-bottom: 1px solid $gray-2;
 }
+
+.feedback-circle {
+    width: 212px;
+    height: 212px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    background-color: $lighter-blue;
+    border-radius: 200px;
+    margin-bottom: 48px;
+    h3 {
+        font-size: 22px;
+        color: $black;
+        @include regular;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 28px;
+        color: $black;
+        @include bold;
+        margin-bottom: 0;
+    }
+}
+
+.feedback-buttons {
+    display: flex;
+    column-gap: 48px;
+    justify-content: center;
+}
+.feedback-btn {
+    height: 64px;
+    width: 64px;
+    display: flex;
+    @include radius-12;
+    align-items: center;
+    justify-content: center;
+    border: unset;
+    &.like {
+        background-color: rgb(222, 243, 232);
+    }
+    &.dislike {
+        background-color: rgb(251, 233, 233);
+    }
+}
 @import "selectable-items";
 @import "margins";
 @import "padding";
