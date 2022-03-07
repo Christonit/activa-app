@@ -1,8 +1,10 @@
 import React from 'react';
-
+import { Modal as ModalComp } from '../views/modal';
 export default {
     title: "Messages"
 }
+
+export const Modal = () => <ModalComp/>
 
 const MessageBoxComp = ({type = "normal"}) => <div style={{backgroundColor: "white", padding : "32px"}}>
      <div className={`message-box ${ type === "failure" ? "failure" : "" } ${ type === "success" ? "success" : "" } mb-32`}>

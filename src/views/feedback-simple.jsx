@@ -12,9 +12,10 @@ export const FeedbackSimple = () => {
                 <div className="feedback-circle">
                     <h3>Recarga</h3>
                     <h2>TV Prepago</h2>
+
                 </div>
 
-                <h1 className="title text-center">¿Cómo valorarías la experiencia de esta recarga?</h1>
+                <h1 className="subtitle text-center">¿Cómo valorarías la experiencia de esta recarga?</h1>
                 
               
                 <div className="feedback-buttons">
