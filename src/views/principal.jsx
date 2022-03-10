@@ -53,7 +53,7 @@ export const MainScreen = () => {
                 </button>
                 <button className="main-action-btn">
                     <span className="main-action-icon">
-                        <img src="https://tedwaffl.sirv.com/Activa/pagos.svg" alt="" />
+                        <img src="https://tedwaffl.sirv.com/Activa/combined-shape.svg" alt="" />
                     </span>
                     <span className="main-action-label">Pagos</span>
                 </button>
@@ -80,7 +80,7 @@ export const MainScreen = () => {
                 </div>
 
                 <div className="service-item">
-                    <img src="https://tedwaffl.sirv.com/Activa/combined-shape-2.svg" alt="" />
+                    <img src="https://tedwaffl.sirv.com/Activa/combined-shape.svg" alt="" />
                     <div className="ms-3">
                         <span className="service-item-title">
                             Activate GO
@@ -101,7 +101,7 @@ export const MainScreen = () => {
                     </button>
                 </div>
                 <div className="service-item">
-                    <img src="https://tedwaffl.sirv.com/Activa/combined-shape-2.svg" alt="" />
+                    <img src="https://tedwaffl.sirv.com/Activa/combined-shape.svg" alt="" />
                     <div className="ms-3">
                         <span className="service-item-title">
                             Activate GO
@@ -122,7 +122,7 @@ export const MainScreen = () => {
                     </button>
                 </div>
                 <div className="service-item">
-                    <img src="https://tedwaffl.sirv.com/Activa/combined-shape-2.svg" alt="" />
+                    <img src="https://tedwaffl.sirv.com/Activa/combined-shape.svg" alt="" />
                     <div className="ms-3">
                         <span className="service-item-title">
                             Activate GO
@@ -143,7 +143,7 @@ export const MainScreen = () => {
                     </button>
                 </div>
                 <div className="service-item">
-                    <img src="https://tedwaffl.sirv.com/Activa/combined-shape-2.svg" alt="" />
+                <img src="https://tedwaffl.sirv.com/Activa/combined-shape.svg" alt="" />
                     <div className="ms-3">
                         <span className="service-item-title">
                             Activate GO

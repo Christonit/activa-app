@@ -7,6 +7,7 @@ import { Inputfield as InputfieldComp,
     InputFieldWithLinkAndCheck as InputFieldWithLinkAndCheckComp,
     InputFieldWithIcon as InputFieldWithIconComp} from '../components/input-field';
 
+import { InputfieldComposed as InputfieldComposedComp } from '../components/input-field-with-dropdown';
     export default {
         title: "Inputs"
     }
@@ -36,3 +37,14 @@ import { Inputfield as InputfieldComp,
                     <input type="email" className="form-control" name="field" />
                 </div>
             </div>
+
+const InputfieldComposedTemplate = (args) => <InputfieldComposedComp {...args}/>
+
+
+export const InputfieldConBandera = InputfieldComposedTemplate.bind({});
+InputfieldConBandera.argTypes = {
+        type: { 
+            control: {type :'select'}, 
+            options: ['normal', 'wrong value', 'correct'] 
+        },
+    }
