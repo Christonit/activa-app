@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal as ModalComp } from '../views/modal';
+import { Modal as ModalComp, ModalAccountAlias as ModalAccountAliasComp  } from '../views/modal';
 export default {
     title: "Messages"
 }
@@ -50,3 +50,6 @@ MessageBox.argTypes = {
         options: ['normal', 'success', 'failure'] 
     },
 }
+
+
+export const ModalAccountAlias = () => <ModalAccountAliasComp/>

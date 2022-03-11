@@ -7,4 +7,10 @@ export default {
   title: 'Views',
 };
 
-export const MainScreen = () => <MainScreenComp/>
+const Template = (args) => <MainScreenComp {...args}/>
+
+export const MainScreen = Template.bind({})
+
+MainScreen.args = {
+  slide_active : false
+}

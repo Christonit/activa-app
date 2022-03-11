@@ -6,6 +6,7 @@
     padding: 20px 16px;
     position: relative;
     margin-bottom: 24px;
+    margin-top: -12px;
     &.green {
         background-color: rgb(8, 167, 85);
     }
@@ -58,4 +59,8 @@
     color: $black;
     font-size: 16px;
     opacity: 0.4;
+}
+
+.banner-notif + .user-information {
+    margin-top: 0;
 }

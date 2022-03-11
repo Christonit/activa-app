@@ -7,8 +7,8 @@ export const BasicaBanner = () => {
             <img src="https://tedwaffl.sirv.com/Activa/banner-azul.png"  alt="" />
         </div>
         <div className="banner-notif-copy">
-            <p className="text medium white mb-0">xxxx xxxx xxxxxx!</p>
-            <p className="text white mb-0">Xxxx xx: <span className="bold">$RD 250.<span className="text-small white">00</span></span></p>
+            <p className="text-smallest medium white mb-0">xxxx xxxx xxxxxx!</p>
+            <p className="text-smallest white mb-0">Xxxx xx: <span className="bold">$RD 250.<span className="text-small white">00</span></span></p>
         </div>
         <button className="banner-notif-button">Ver oferta</button>
         <button className="banner-notif-close">close</button>
@@ -20,8 +20,8 @@ export const GreenBanner = () => {
             <img src="https://tedwaffl.sirv.com/Activa/banner-verde.png"  alt="" />
         </div>
         <div className="banner-notif-copy">
-            <p className="text medium white mb-0">xxxx xxxx xxxxxx!</p>
-            <p className="text white mb-0">Xxxx xx: <span className="bold">$RD 250.<span className="text-small white">00</span></span></p>
+            <p className="text-smallest medium white mb-0">xxxx xxxx xxxxxx!</p>
+            <p className="text-smallest white mb-0">Xxxx xx: <span className="bold">$RD 250.<span className="text-small white">00</span></span></p>
         </div>
         <button className="banner-notif-button">Ver oferta</button>
         <button className="banner-notif-close">close</button>
@@ -33,8 +33,8 @@ export const OrangeBanner = () => {
             <img src="https://tedwaffl.sirv.com/Activa/banner-naranja.png"  alt="" />
         </div>
         <div className="banner-notif-copy">
-            <p className="text medium white mb-0">xxxx xxxx xxxxxx!</p>
-            <p className="text white mb-0">Xxxx xx: <span className="bold">$RD 250.<span className="text-small white">00</span></span></p>
+            <p className="text-smallest medium white mb-0">xxxx xxxx xxxxxx!</p>
+            <p className="text-smallest white mb-0">Xxxx xx: <span className="bold">$RD 250.<span className="text-small white">00</span></span></p>
         </div>
         <button className="banner-notif-button">Ver oferta</button>
         <button className="banner-notif-close">close</button>
@@ -46,8 +46,8 @@ export const RedBanner = () => {
             <img src="https://tedwaffl.sirv.com/Activa/banner-rojo.png"  alt="" />
         </div>
         <div className="banner-notif-copy">
-            <p className="text medium white mb-0">xxxx xxxx xxxxxx!</p>
-            <p className="text white mb-0">Xxxx xx: <span className="bold">$RD 250.<span className="text-small white">00</span></span></p>
+            <p className="text-smallest medium white mb-0">xxxx xxxx xxxxxx!</p>
+            <p className="text-smallest white mb-0">Xxxx xx: <span className="bold">$RD 250.<span className="text-small white">00</span></span></p>
         </div>
         <button className="banner-notif-button">Ver oferta</button>
         <button className="banner-notif-close">close</button>

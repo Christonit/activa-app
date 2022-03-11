@@ -12,6 +12,7 @@
     height: calc(100% - 17.5%);
     overflow: hidden;
     padding-bottom: 256px;
+    z-index: 999;
 }
 
 .sheet-drawer.active {

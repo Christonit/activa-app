@@ -1,7 +1,10 @@
 import { React } from "react";
 import '../sass/main.scss';
-export const MainScreen = () => {
+import { BasicaBanner } from "../components/banners";
+export const MainScreen = ({slide_active = false}) => {
     return <section className="view-container">
+
+        {slide_active && <div className="overlay"></div>}
         <div className="nav-header home-screen">
             <button className="app-bar-button home-screen-button">
                 <img src="https://tedwaffl.sirv.com/Activa/menu-copy.svg" alt="" />
@@ -13,6 +16,7 @@ export const MainScreen = () => {
                     <img src="https://tedwaffl.sirv.com/Activa/notifications.svg" alt="" />
                 </button>
                 <button className="app-bar-button">
+                    <span className="notif-counter">9</span>
                     <img src="https://tedwaffl.sirv.com/Activa/bag.svg" alt="" />
                 </button>
             </div>
@@ -21,6 +25,8 @@ export const MainScreen = () => {
 
 
         <div className="view-body">
+
+            <BasicaBanner/>
 
             <div className="user-information">
                 <div className="user-information-picture">
@@ -71,7 +77,7 @@ export const MainScreen = () => {
                 </button>
             </div>
 
-            <div className="sheet-drawer">
+            <div className={`sheet-drawer ${slide_active ? 'active' : ''}`}>
 
                 <div className="sheet-drawer-header">
                     <button className="drawer-button"><hr /></button>
