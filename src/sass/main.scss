@@ -161,6 +161,11 @@ a {
     border-radius: 12px;
     background-color: $gray-2;
     margin: 0 6px;
+    max-width: 8px;
+    max-height: 8px;
+    min-width: 8px;
+    min-height: 8px;
+    display: block;
 }
 .slider-bullet.active {
     background-color: $blue;
