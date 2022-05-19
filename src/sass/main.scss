@@ -1051,3 +1051,11 @@ a {
 @import "menu";
 @import "tables";
 @import "banner";
+
+
+.invisible-div{
+    display: block;
+    width: 100%;
+    height: 252px;
+    content: "";
+}
