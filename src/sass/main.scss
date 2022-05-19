@@ -182,6 +182,11 @@ a {
     border: unset;
     height: 48px;
     @include radius-12;
+
+    &:focus{
+        opacity: 0.9;
+
+    }
 }
 
 .btn-cta-secondary {
@@ -192,6 +197,43 @@ a {
     position: relative;
     z-index: 1;
     width: 100%;
+    &::before {
+        content: "";
+        background-image: linear-gradient(to right, $ligh-orange, $orange);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        z-index: -1;
+        @include radius-12;
+    }
+    &::after {
+        content: "";
+        background-color: white;
+        position: absolute;
+        height: calc(100% - 4px);
+        width: calc(100% - 4px);
+        top: 2px;
+        right: 2px;
+        z-index: 0;
+        z-index: -1;
+        border-radius: 10px;
+    }
+}
+.btn-cta-secondary:focus {
+    border: unset;
+    border: transparent;
+    color: $orange;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    outline: none;
+    opacity: 0.9;
+    box-shadow: unset;
+
     &::before {
         content: "";
         background-image: linear-gradient(to right, $ligh-orange, $orange);
@@ -232,6 +274,114 @@ a {
     background-color: transparent;
     position: relative;
     z-index: 1;
+    &::before {
+        content: "";
+        background-image: linear-gradient(to right, $ligh-orange, $orange);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        z-index: -1;
+        @include radius-12;
+    }
+    &::after {
+        content: "";
+        background-color: white;
+        position: absolute;
+        height: calc(100% - 4px);
+        width: calc(100% - 4px);
+        top: 2px;
+        right: 2px;
+        z-index: 0;
+        z-index: -1;
+        border-radius: 10px;
+    }
+}
+.btn-secondary:focus {
+    border: unset;
+    border: transparent;
+    color: $orange;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    outline: none;
+    opacity: 0.9;    box-shadow: unset;
+
+    &::before {
+        content: "";
+        background-image: linear-gradient(to right, $ligh-orange, $orange);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        z-index: -1;
+        @include radius-12;
+    }
+    &::after {
+        content: "";
+        background-color: white;
+        position: absolute;
+        height: calc(100% - 4px);
+        width: calc(100% - 4px);
+        top: 2px;
+        right: 2px;
+        z-index: 0;
+        z-index: -1;
+        border-radius: 10px;
+    }
+}
+.btn-secondary:active:focus {
+    box-shadow: unset;
+}
+.btn-secondary:active {
+    border: unset;
+    border: transparent;
+    color: $orange;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    outline: none;
+    opacity: 0.9;    box-shadow: unset;
+
+    &::before {
+        content: "";
+        background-image: linear-gradient(to right, $ligh-orange, $orange);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        z-index: -1;
+        @include radius-12;
+    }
+    &::after {
+        content: "";
+        background-color: white;
+        position: absolute;
+        height: calc(100% - 4px);
+        width: calc(100% - 4px);
+        top: 2px;
+        right: 2px;
+        z-index: 0;
+        z-index: -1;
+        border-radius: 10px;
+    }
+}
+.btn-secondary:hover {
+    border: unset;
+    border: transparent;
+    color: $orange;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    outline: none;
+    opacity: 0.9;    box-shadow: unset;
+
     &::before {
         content: "";
         background-image: linear-gradient(to right, $ligh-orange, $orange);
