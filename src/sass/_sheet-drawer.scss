@@ -13,6 +13,9 @@
     overflow: hidden;
     padding-bottom: 256px;
     z-index: 999;
+    top: 70%;
+
+    transition: top 350ms ease-in-out;
 }
 
 .sheet-drawer.active {
