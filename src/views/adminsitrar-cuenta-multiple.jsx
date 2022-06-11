@@ -1,6 +1,6 @@
 import {React} from "react";
 import "../sass/main.scss";
-export const AdministrarCuenta = () => {
+export const AdministrarCuentaMultiple = () => {
     return (
         <section className="view-container">
             <div className="nav-header">
@@ -27,7 +27,7 @@ export const AdministrarCuenta = () => {
                         </span>
 
                         <div>
-                            <button className="link red px-0">
+                            <button className="px-0 link red">
                                 Eliminar alias <span className="material-icons ml-8">highlight_off</span>
                             </button>
                         </div>
