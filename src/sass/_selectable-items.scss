@@ -144,3 +144,20 @@
         color: white;
     }
 }
+
+.selectable-box-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.selectable-box {
+    padding: 16px;
+    @include radius-12;
+    border: 1px solid $light-gray;
+    &.selected {
+        border-color: rgb( 252, 238, 225);
+        background-color: rgb( 252, 238, 225);
+    }
+}
+
+
