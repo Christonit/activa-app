@@ -846,6 +846,9 @@ a {
 .light-blue {
     color: $light-blue-alt;
 }
+.blue {
+    color: $blue;
+}
 .success {
     color: $success;
 }
@@ -866,10 +869,33 @@ a {
     margin-bottom: 24px;
 }
 
+.collapsable-box.alternative {
+    background-color: transparent;
+    padding: 16px 0;
+    overflow-y: hidden;
+    border-bottom: 1px solid rgb(224, 226, 226);
+    border-radius: unset;
+    margin-bottom: 0;
+    &:last-child{
+        margin-bottom: 24px;
+
+    }
+
+}
+
 .collabable-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.alternative .collapsable-btn {
+    background-color: transparent;
+    border:  1px solid $blue;
+    color: $blue;
+    padding: 4px;
+    font-size: 24px;
+    border-radius: 12px;
 }
 
 .collapsable-btn {
@@ -1256,4 +1282,9 @@ a {
     width: 100%;
     height: 252px;
     content: "";
+}
+
+
+.no-border{
+    border: unset;
 }
