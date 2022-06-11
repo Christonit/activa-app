@@ -614,6 +614,25 @@ a {
     }
 }
 
+
+.input-dropdown {
+
+    display: flex;
+    align-items: center;
+    border: 1px solid $light-blue;
+    height: 40px;
+    @include regular;
+    @include radius-12;
+    overflow: hidden;
+    background-color: transparent;
+    width: 100%;
+    padding: 0 16px;
+    &:focus {
+        outline: 3px solid $light-blue;
+        border-color: $blue;
+    }
+}
+
 .informational-label {
     display: flex;
     align-items: center;

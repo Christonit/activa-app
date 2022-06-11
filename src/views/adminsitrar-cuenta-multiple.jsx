@@ -15,22 +15,16 @@ export const AdministrarCuentaMultiple = () => {
             <div className="view-body second-body-white">
                 <h2 className="subtitle mb-16">Información general:</h2>
                 <div className="faux-table">
-                    <p className="text mb-8">Número de cuenta:</p>
-                    <div className="d-flex align-items-center">
-                        <span className="text bold">00100014243</span>
-                        <button className="link ml-8">Añadir alias</button>
-                        <button className="link material-icons">help_outline</button>
-                    </div>
-                    <div className="">
-                        <span className="textd-block ">
-                            <span className="bold">Oficina</span> 00100014243
-                        </span>
+                    <p className="text mb-8">Seleccione una cuenta:</p>
 
-                        <div>
-                            <button className="px-0 link red">
-                                Eliminar alias <span className="material-icons ml-8">highlight_off</span>
-                            </button>
-                        </div>
+                    <button name="dropdown" id="" className="input-dropdown form-select-dropdown mb-16">
+                        <span className="bold mr-8">Oficina</span>
+                        (00100024293)
+                    </button>
+
+                    <div className="d-flex align-items-center">
+                        <button className="link px-0">Añadir alias</button>
+                        <button className="link material-icons">help_outline</button>
                     </div>
                 </div>
                 {/* <div className="faux-table">
