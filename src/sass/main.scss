@@ -32,6 +32,9 @@ a {
         background-color: rgb(252, 238, 225);
         overflow-x: hidden;
     }
+    &.faults-historic {
+        background-color: rgb(252, 238, 225);
+    }
     &.service-fail {
         background-color: $light-red;
         overflow-x: hidden;
@@ -68,6 +71,9 @@ a {
     background-color: $lighter-blue;
 }
 
+.faults-historic .nav-header {
+    background-color: #fceee1;
+}
 .payment-historic .nav-header {
     background-color: #fceee1;
 }
@@ -144,6 +150,7 @@ a {
     margin: 0;
     background-color: white;
     padding: 24px;
+    z-index: 9;
 }
 .slider-text {
     padding: 0 16px;

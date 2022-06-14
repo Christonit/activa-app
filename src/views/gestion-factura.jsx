@@ -2,7 +2,7 @@ import {React} from "react";
 import "../sass/main.scss";
 export const GestionFactura = () => {
     return (
-        <section className="view-container payment-historic">
+        <section className="view-container faults-historic">
             <div class="nav-header">
                 <button class="app-bar-button">
                     <img src="https://tedwaffl.sirv.com/Activa/arrow_back_ios_new_black_24dp(1).svg" alt="" />
