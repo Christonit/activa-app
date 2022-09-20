@@ -188,9 +188,8 @@ a {
     box-shadow: 0 4px 4px rgba(218, 54, 44, 0.3);
     border: none;
     @include radius-12;
-    &:focus{
+    &:focus {
         opacity: 0.9;
-
     }
 }
 .btn.cta {
@@ -204,9 +203,8 @@ a {
     height: 48px;
     @include radius-12;
 
-    &:focus{
+    &:focus {
         opacity: 0.9;
-
     }
 }
 
@@ -328,7 +326,8 @@ a {
     position: relative;
     z-index: 1;
     outline: none;
-    opacity: 0.9;    box-shadow: unset;
+    opacity: 0.9;
+    box-shadow: unset;
 
     &::before {
         content: "";
@@ -366,7 +365,8 @@ a {
     position: relative;
     z-index: 1;
     outline: none;
-    opacity: 0.9;    box-shadow: unset;
+    opacity: 0.9;
+    box-shadow: unset;
 
     &::before {
         content: "";
@@ -401,7 +401,8 @@ a {
     position: relative;
     z-index: 1;
     outline: none;
-    opacity: 0.9;    box-shadow: unset;
+    opacity: 0.9;
+    box-shadow: unset;
 
     &::before {
         content: "";
@@ -502,10 +503,10 @@ a {
     font-size: 14px;
 }
 
-.size-22{
+.size-22 {
     font-size: 22px;
 }
-.size-24{
+.size-24 {
     font-size: 24px;
 }
 
@@ -651,9 +652,7 @@ a {
     }
 }
 
-
 .input-dropdown {
-
     display: flex;
     align-items: center;
     border: 1px solid $light-blue;
@@ -884,11 +883,9 @@ a {
     border-bottom: 1px solid rgb(224, 226, 226);
     border-radius: unset;
     margin-bottom: 0;
-    &:last-child{
+    &:last-child {
         margin-bottom: 24px;
-
     }
-
 }
 
 .collabable-row {
@@ -899,7 +896,7 @@ a {
 
 .alternative .collapsable-btn {
     background-color: transparent;
-    border:  1px solid $blue;
+    border: 1px solid $blue;
     color: $blue;
     padding: 4px;
     font-size: 24px;
@@ -1208,6 +1205,10 @@ a {
     border-bottom: 3px solid $black;
     color: $black;
 }
+.notif-filter-nav.sign-up.active {
+    border-bottom: 3px solid $blue;
+    color: $black;
+}
 .notif-content {
     border-bottom: 1px solid $light-gray;
     margin-bottom: 24px;
@@ -1285,15 +1286,13 @@ a {
 @import "tables";
 @import "banner";
 
-
-.invisible-div{
+.invisible-div {
     display: block;
     width: 100%;
     height: 252px;
     content: "";
 }
 
-
-.no-border{
+.no-border {
     border: unset;
 }
