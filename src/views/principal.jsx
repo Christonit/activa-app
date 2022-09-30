@@ -75,7 +75,42 @@ export const MainScreen = ({slide_active = false}) => {
                     </button>
                 </div>
 
-                <div id="payment-drawers" className={`sheet-drawer ${slide_active ? "active" : ""}`}>
+                <div
+                    id="payment-drawers"
+                    onTouchEnd={e => {
+                        var x = e.changedTouches[0].clientX;
+                        var y = e.changedTouches[0].clientY;
+                        console.log("touchend", y);
+                        const sidesheet = document.querySelector("#payment-drawers");
+                        const actions = document.querySelector("#main-actions-access");
+                        const el_position = actions.offsetTop;
+                        if (y < 280) {
+                            sidesheet.classList.add("active");
+                            sidesheet.style.top = "17.5%";
+
+                            return;
+                        }
+                        if (y > 280 && y < 379) {
+                            sidesheet.classList.add("active");
+                            sidesheet.style.top = "17.5%";
+
+                            return;
+                        } else if (y > 380) {
+                            sidesheet.classList.remove("active");
+                            sidesheet.style.top = 164 + el_position + "px";
+                            return;
+                        }
+                        sidesheet.style.top = y + "px";
+                    }}
+                    onTouchMove={e => {
+                        var x = e.touches[0].clientX;
+                        var y = e.touches[0].clientY;
+                        const sidesheet = document.querySelector("#payment-drawers");
+                        if (sidesheet.classList.contains("active")) sidesheet.classList.remove("active");
+                        console.log("touch move", y);
+                        sidesheet.style.top = y + "px";
+                    }}
+                    className={`sheet-drawer ${slide_active ? "active" : ""}`}>
                     <div className="sheet-drawer-header">
                         <button className="drawer-button">
                             <hr />
