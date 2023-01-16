@@ -96,8 +96,10 @@
     display: inline-flex;
     text-align: center;
     justify-content: center;
+    align-items: center;
+    background-color: #96cbe3;
     img {
-        height: 100%;
+        width: 100%;
         border-radius: 64px;
         margin: auto;
         display: block;

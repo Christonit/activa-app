@@ -30,14 +30,14 @@ a {
 
     &.payment-historic {
         background-color: rgb(252, 238, 225);
-        overflow-x: hidden;
+        overflow: hidden;
     }
     &.faults-historic {
         background-color: rgb(252, 238, 225);
     }
     &.service-fail {
-        background-color: $light-red;
-        overflow-x: hidden;
+        background-color: white;
+        overflow: hidden;
     }
 }
 .action-container {
@@ -71,6 +71,19 @@ a {
     background-color: $lighter-blue;
 }
 
+.view-container.feature-container {
+    background-color: white;
+}
+.view-container.feature-container .nav-header {
+    background-color: $lighter-blue;
+}
+.view-container.feature-container .view-body {
+    background-color: $lighter-blue;
+}
+.view-container.feature-container .view-body.second-body-white {
+    background-color: white;
+}
+
 .faults-historic .nav-header {
     background-color: #fceee1;
 }
@@ -78,6 +91,10 @@ a {
     background-color: #fceee1;
 }
 .service-fail .nav-header {
+    background-color: $light-red;
+}
+
+.service-fail .view-body:not(.second-body-white) {
     background-color: $light-red;
 }
 
@@ -531,6 +548,16 @@ a {
     font-size: 36px;
     line-height: normal;
 }
+
+.wallet-title {
+    color: $success;
+    @include bold;
+    font-size: 28px;
+    display: block;
+    margin-left: 0;
+    line-height: normal;
+}
+
 .form-label {
     color: $black;
     font-size: 16px;
@@ -554,6 +581,7 @@ a {
         outline: 3px solid $light-blue;
         box-shadow: unset;
         border-color: $blue;
+        @include radius-12;
     }
 }
 
@@ -874,6 +902,9 @@ a {
     padding: 16px;
     overflow-y: hidden;
     margin-bottom: 24px;
+    &:last-child {
+        margin-bottom: 72px;
+    }
 }
 
 .collapsable-box.alternative {
@@ -930,6 +961,15 @@ a {
 .collapsable-box.active .collapsable-btn.inactive {
     display: none;
 }
+
+// .service-fail .collapsable-box {
+//     background-color: transparent;
+//     border-radius: 0;
+//     padding: 0px 0 16px;
+//     overflow-y: hidden;
+//     margin-bottom: 24px;
+//     border-bottom: 1px solid rgb(224, 226, 226);
+// }
 .divider {
     margin: 0;
     background-color: $light-blue;
@@ -953,19 +993,24 @@ a {
 
 .user-information-picture {
     position: relative;
+    height: 64px;
     display: inline-block;
+    width: 64px;
 }
 .user-information-picture-container {
     position: relative;
     width: 64px;
+    min-width: 64px;
     height: 64px;
     border-radius: 64px;
     overflow: hidden;
     display: inline-flex;
     text-align: center;
     justify-content: center;
+    align-items: center;
+    background-color: #96cbe3;
     img {
-        height: 100%;
+        width: 100%;
         border-radius: 64px;
         margin: auto;
         display: block;
@@ -979,7 +1024,7 @@ a {
     padding: 0;
     background-image: linear-gradient(to right, $ligh-orange, $orange);
     line-height: normal;
-    bottom: 0;
+    bottom: -4px;
     width: 24px;
     height: 24px;
     border-radius: 24px;
@@ -1035,6 +1080,10 @@ a {
     justify-content: center;
     text-align: center;
     padding: 0;
+    color: $black;
+}
+
+a.main-action-btn {
     color: $black;
 }
 
@@ -1205,6 +1254,10 @@ a {
     border-bottom: 3px solid $black;
     color: $black;
 }
+.view-container.service-fail .notif-filter-nav.active {
+    border-bottom: 3px solid #3097c8;
+    color: $black;
+}
 .notif-filter-nav.sign-up.active {
     border-bottom: 3px solid $blue;
     color: $black;
@@ -1270,7 +1323,7 @@ a {
     padding: 40px;
     background-color: white;
     @include radius-12;
-    z-index: 999;
+    z-index: 9999;
     width: calc(100% - 48px);
     height: auto;
     margin: auto;

@@ -40,11 +40,13 @@
     padding: 0 16px;
     height: 40px;
     min-width: 88px;
+    color: $black;
     @include bold;
     @include radius-12;
     &.active {
         border-color: $blue;
         background-color: $lighter-blue;
+        color: $black;
         border-bottom: 2px solid $blue;
     }
 
@@ -145,7 +147,7 @@
     }
 }
 
-.selectable-box-container{
+.selectable-box-container {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
@@ -155,9 +157,7 @@
     @include radius-12;
     border: 1px solid $light-gray;
     &.selected {
-        border-color: rgb( 252, 238, 225);
-        background-color: rgb( 252, 238, 225);
+        border-color: rgb(252, 238, 225);
+        background-color: rgb(252, 238, 225);
     }
 }
-
-

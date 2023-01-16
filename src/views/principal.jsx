@@ -101,6 +101,8 @@ export const MainScreen = ({slide_active = false}) => {
                             return;
                         }
                         sidesheet.style.top = y + "px";
+
+                        e.stopPropagation();
                     }}
                     onTouchMove={e => {
                         var x = e.touches[0].clientX;
@@ -109,6 +111,7 @@ export const MainScreen = ({slide_active = false}) => {
                         if (sidesheet.classList.contains("active")) sidesheet.classList.remove("active");
                         console.log("touch move", y);
                         sidesheet.style.top = y + "px";
+                        e.stopPropagation();
                     }}
                     className={`sheet-drawer ${slide_active ? "active" : ""}`}>
                     <div className="sheet-drawer-header">
